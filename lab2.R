@@ -1,0 +1,9 @@
+file.create("Nav.txt") 
+write.table(x = iris[1:10, ], file = "Nav.txt") 
+myData = read.table(file = "Nav.txt ") 
+print(myData) 
+file.rename("Nav.txt", "okay.txt") 
+list.files() 
+#same renamed file, same directories, different copied file name chalega
+file.copy("C:/Users/Dell/Documents/okay.txt", "C:/Users/Dell/Documents/crazy.txt") 
+list.files("C:/Users/Dell/Documents") 
