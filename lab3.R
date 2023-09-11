@@ -9,9 +9,11 @@ if(x==y){
 }
 x=readline("Enter palindromic word: ")
 temp <- strsplit(x, NULL)[[1]]
+print(temp)
 reversed <- paste(rev(temp),collapse="")
+print(reversed)
 paste("Reversed String:",reversed)
-if(setequal(reversed,x)==TRUE){
+if(reversed==x){
   print("String is a palindrome")
 } else{
   print("String is not a palindrome")
