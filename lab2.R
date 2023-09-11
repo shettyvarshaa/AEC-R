@@ -1,9 +1,10 @@
+setwd("D:/veja")
 file.create("Nav.txt") 
 write.table(x = iris[1:10, ], file = "Nav.txt") 
 myData = read.table(file = "Nav.txt ") 
 print(myData) 
-file.rename("Nav.txt", "okay.txt") 
+file.rename("Nav.txt", "bili.txt") 
 list.files() 
 #same renamed file, same directories, different copied file name chalega
-file.copy("C:/Users/Dell/okay.txt", "C:/Users/Dell/crazy.txt") 
-list.files("C:/Users/Dell/Documents") 
+file.copy("D:/veja/bili.txt", "D:/veja/yu.txt") 
+list.files("D:/veja/") 
